@@ -73,3 +73,50 @@ will tell the animation to stay at its end state after complete;
 
 	}
 }
+
+
+/*___ship___*/
+.ship-section{
+	Background:transparent url(../img/kasei-valles-canyons.jpg) no-repeat center;
+	background-size:cover;	
+}
+
+.ship{
+	width:150px;
+	display:inline-block;
+}
+
+.ship1,.ship2{
+	opacity:0;
+}
+
+.js-ship1{
+	-webkit-animation: ship1 1s linear forwards;	
+}
+
+@-webkit-keyframes ship1{
+	0%{
+		opacity:0;
+		transform:translateY(100px)	
+	}
+	100%{
+		opacity:1;
+		transform:translateY(0)
+	}
+}
+
+.js-ship2{
+	-webkit-animation: ship2 1s linear forwards;
+	-webkit-animation-delay:500ms;	
+}
+
+@-webkit-keyframes ship2{
+	0%{
+		opacity:0;
+		transform:translateY(100px)	
+	}
+	100%{
+		opacity:1;
+		transform:translateY(0)
+	}
+}
